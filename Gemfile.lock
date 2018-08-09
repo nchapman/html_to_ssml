@@ -1,0 +1,27 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    crass (1.0.4)
+    guess_html_encoding (0.0.11)
+    loofah (2.2.2)
+      crass (~> 1.0.2)
+      nokogiri (>= 1.5.9)
+    mini_portile2 (2.3.0)
+    nokogiri (1.8.4)
+      mini_portile2 (~> 2.3.0)
+    rails-html-sanitizer (1.0.4)
+      loofah (~> 2.2, >= 2.2.2)
+    ruby-readability (0.7.0)
+      guess_html_encoding (>= 0.0.4)
+      nokogiri (>= 1.6.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  nokogiri
+  rails-html-sanitizer
+  ruby-readability
+
+BUNDLED WITH
+   1.16.0
