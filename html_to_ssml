@@ -1,9 +1,14 @@
 #!/usr/bin/env ruby
-
 require 'rubygems'
 require 'bundler/setup'
 require './src/html_document'
 
-html = HtmlDocument.new(STDIN.read)
+if ARGV.size > 0
+  input = File.read(ARGV[0])
+else
+  input = STDIN.read
+end
+
+html = HtmlDocument.new(input)
 
 puts html.to_ssml
